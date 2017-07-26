@@ -13,16 +13,16 @@ class CommentList extends React.Component{
     //   {username: 'Lucy', content: 'Good'}
     // ]
 
-    return (
-      <div>{this.props.comments.map((comment, i) => {
+  
+     
         return (
           <div>
         {this.props.comments.map((comment, i) => <Comment comment={comment} key={i} />)}
       </div>
         )
-      })}</div>
-    )
-  }
+      }
+
+  
 }
 
 
