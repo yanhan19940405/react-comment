@@ -3,11 +3,12 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-color: #fbfbfb;
+  overflow-x:hidden;
 }
 
 .wrapper {
-  width: 500px;
-  margin: 10px auto;
+  width: 100%;
+  margin: 0 auto;
   font-size: 14px;
   background-color: #fff;
   border: 1px solid #f1f1f1;
@@ -16,6 +17,8 @@ body {
 
 /* 评论框样式 */
 .comment-input {
+  width: 85%;
+  margin: 0 auto;
   background-color: #fff;
   border: 1px solid #f1f1f1;
   padding: 20px;
@@ -29,7 +32,7 @@ body {
 
 .comment-field .comment-field-name {
   display: flex;
-  flex-basis: 100px;
+  flex-basis: 10%;
   font-size: 14px;
 }
 
@@ -87,6 +90,9 @@ body {
   margin-bottom: 10px;
   padding-bottom: 10px;
   min-height: 50px;
+  width: 90%;
+  margin: 0 auto;
+  height: 80px
 }
 
 .comment .comment-user {
@@ -96,9 +102,31 @@ body {
 .comment span {
   color: #00a3cf;
   font-style: italic;
+  text-align: left
 }
 
 .comment p {
   margin: 0;
   /*text-indent: 2em;*/
+}
+.comment-createdtime{
+  position: absolute;
+  padding-top:60px;
+  padding-left: 80%;
+  
+}
+.comment-text{
+  word-break: normal|break-all|keep-all;
+}
+.comment:hover .comment-delete {
+  color: #00a3cf;
+}
+
+.comment-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: transparent;
+  font-size: 12px;
+  cursor: pointer;
 }
