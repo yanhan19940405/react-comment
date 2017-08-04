@@ -2,11 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #fbfbfb;
+  background-color: #CCCCFF;
+  font-size: 20px
 }
 
 .wrapper {
-  width: 500px;
+  width: 80%;
   margin: 10px auto;
   font-size: 14px;
   background-color: #fff;
@@ -124,4 +125,47 @@ body {
 .comment p {
   margin: 0;
   /*text-indent: 2em;*/
+}
+#header-nav{
+  width:100%;
+}
+#header-nav ul{
+list-style-type: none;
+display: flex;
+}
+#header-nav ul li{
+  flex:1;
+  display: inline;
+}
+#header-nav ul a{
+  text-decoration:none;
+  cursor:pointer;
+  color: black
+}
+#header-nav ul a:hover{
+ color:#99FFFF;
+}
+#home{
+  width:80%;
+  margin: 0 auto;
+  background-color:white;
+  text-align: center;
+  line-height: 8rem;
+}
+#about{
+  width:80%;
+  margin: 0 auto;
+  background-color:white;
+  text-align: center;
+  line-height: 8rem;
+}
+#smart{
+  width:80%;
+  margin: 0 auto;
+  background-color:white;
+  text-align: center;
+  line-height:8rem;
+}
+#applist{
+  margin-top:20px;
 }
