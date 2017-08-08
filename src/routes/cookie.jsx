@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory,IndexRoute, Redirect } from 'react-router';
+import { Router, Route, hashHistory,IndexRoute, Redirect } from 'react-router';
 import Applist from '../templates/applist';
 import Home from '../templates/home';
 import About from '../templates/about';
@@ -17,7 +17,7 @@ class Routes extends React.Component{
 
 		return  (
     
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
          <Route path="/" component={Applist}>
           <IndexRoute component={Home} />
           <Route path="home" component={Home} />
