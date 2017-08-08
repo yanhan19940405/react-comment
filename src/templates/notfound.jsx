@@ -25,11 +25,11 @@ class Waterfall extends React.Component {
             title: { text: 'ECharts 柱状图' },
             tooltip: {},
             xAxis: {
-                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+                data: ["A","B","C","D","E","F"]
             },
             yAxis: {},
             series: [{
-                name: '销量',
+                name: 'Y-num',
                 type: 'bar',
                 data: [5, 20, 36, 10, 10, 20]
             }]
