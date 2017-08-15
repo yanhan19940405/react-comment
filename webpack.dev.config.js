@@ -17,7 +17,11 @@ const devConfig = merge(baseConfig, {
             filename: 'index.html',
             template: path.resolve(SRC_PATH, 'templates', 'index.html')
         })
-    ]
+    ],
+   // devServer:{
+   //  proxy: {  '/api': { target: 'https://api.github.com/', secure: false } },
+
+   // }
 });
 
 module.exports = devConfig;

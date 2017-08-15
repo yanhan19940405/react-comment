@@ -16,6 +16,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx']
     },
+
     module: {
         loaders: [
              {
@@ -23,6 +24,43 @@ module.exports = {
                 loaders: ['babel-loader'],
                 include: SRC_PATH,
                 exclude: path.resolve(ROOT_PATH, 'node_modules')
+            },
+            {
+                test: /\.jsx?$/,
+                loaders: ['babel-loader'],
+                include: SRC_PATH,
+                exclude: path.resolve(ROOT_PATH, 'node_modules')
+            }, {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader',
+            }, {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                            localIdentName: '[name]__[local]-[hash:5]',
+                            importLoaders: 3,
+                        },
+                    },
+                    'sass-loader',
+                ],
+            }, {
+                test: /\.(png|jpg|gif|svg)$/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8192,
+                            name: 'images/[name].[hash:5].[ext]',
+                        },
+                    },
+                ],
+            }, {
+                test: /\.json$/,
+                loader: 'json-loader',
             }
         ]
     }

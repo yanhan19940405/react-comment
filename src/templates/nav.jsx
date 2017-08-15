@@ -8,7 +8,7 @@ class Nav extends React.Component {
        <div id="header-nav">
         <ul>
           <li><Link to="/home">主页</Link></li>
-          <li><Link to="/about">css3动画案例</Link></li>
+          <li><Link to="/about">前后端交互</Link></li>
           <li><Link to="/smart">数据可视化</Link></li>
           <li><Link to="/commentapp">应用实例</Link></li>
         </ul>

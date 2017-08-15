@@ -20,10 +20,10 @@ class Routes extends React.Component{
     <Router history={hashHistory}>
          <Route path="/" component={Applist}>
           <IndexRoute component={Home} />
-          <Route path="home" component={Home} />
-          <Route path="about" component={About} />
-          <Route path="smart" component={NotFound} />
-          <Route path="commentapp" component={CommentApp} />
+          <Route path="/home" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/smart" component={NotFound} />
+          <Route path="/commentapp" component={CommentApp} />
         </Route>
       </Router>
       );
