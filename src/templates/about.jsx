@@ -101,13 +101,13 @@ fetch("https://api.github.com/")
   render () {
     return (
       <div >
-      <p>使用Fetch交互</p>
+      <h2>使用Fetch交互</h2>
      <img src={require('../img/fetch.jpg')}/>
       <p>如图1：代码交互示意图</p>
       <ul>
-         <li>username:{this.state.username}</li>
-         <li>password:{this.state.password}</li>
-         <li>flv:{this.state.flv}</li>
+         <li><strong>username:</strong>{this.state.username}</li>
+         <li><strong>password:</strong>{this.state.password}</li>
+         <li><strong>flv:</strong>{this.state.flv}</li>
       </ul>
       </div>
 

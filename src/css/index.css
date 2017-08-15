@@ -7,7 +7,7 @@ body {
 }
 
 .wrapper {
-  width: 80%;
+  width: 76%;
   margin: 10px auto;
   font-size: 14px;
   background-color: #fff;
@@ -151,21 +151,22 @@ display: flex;
   margin: 0 auto;
   background-color:white;
   text-align: center;
-  line-height: 8rem;
+
+  
 }
 #about{
   width:80%;
   margin: 0 auto;
   background-color:white;
   text-align: center;
- 
+  margin-top:-5vh;
 }
 #smart{
   width:80%;
   margin: 0 auto;
   background-color:white;
   text-align: center;
-  line-height:8rem;
+
 }
 #applist{
   margin-top:20px;
